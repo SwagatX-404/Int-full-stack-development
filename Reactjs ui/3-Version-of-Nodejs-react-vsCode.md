@@ -31,6 +31,31 @@
           - Live server
           - Icons
           - Intellisense for CSS class name in HTML.
+          - Live Preview
+
+# Open Vs code:
+- Set up traditional web application development.
+  -  Setup Package.json >npm init -y
+  - Add "README.md"
+  - Add folders
+
+    - **public** --> for static resource like html, images, docs..
+    - **src** --> for dynamic resources like css, scss, js, jsx, ts, tsx...
+
+**Add following pages into public  folder**  
+- a) index.html
+- b) home.html
+
+- Enable React in any web  page we must have following libraries.
+    1.react
+    2.react-dom
+    3.babel
+     
+- "react" is the core library to enable react in page. It contains all basics react methods.
+
+- "react-dom" is virtual DOM library.
+  
+
 
 
 
