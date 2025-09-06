@@ -55,3 +55,6 @@
 - It comprises of elements Hierarchy and styles with Logic inside component.
 
 
+Used Browsing Compiling Technique 
+  JIT - Just in Time  : use inside browser
+  AOT - Ahead of Time : out side browser
