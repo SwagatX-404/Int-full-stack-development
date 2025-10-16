@@ -1,0 +1,42 @@
+1.What is the difference between `==` and `===` in JavaScript?
+
+ 	   == Loose Equality, it compares values only.	5=="5"	True-> coz JS covert "5" to number before compare.
+ 	  === Strictly Equality, Compare values and type.  5==="5"   ->False coz one is number and another is string.
+
+2.What's the difference between a JavaScript variable that is: `null`, `undefined` or undeclared?
+ 
+ 	undefined : Variable is declared but value is not assigned yet. JS automatically assigned "undefined"
+ 			-> undefined → “I exist, but I have no value yet.”
+
+ 	null : Variable is assigned as empty or nothing on a purpose. Manually assign "null"
+ 			-> null → “I exist, and my value is nothing.”
+
+ 	Uncleared : Variable is not declared at all in the code. JS doesn't know, it doesn't not exist in memory
+
+ 	Example --------->	let x;          // declared but not assigned
+ 				let y = null;   // declared and intentionally empty
+
+ 					console.log(x); // undefined
+ 					console.log(y); // null
+ 					console.log(z); // ❌ ReferenceError (undeclared)
+
+3.What's the difference between `.call` and `.apply` in JavaScript?
+
+    .call and .apply are both used to invoke functions with a specific "this" context and arguments.
+    i) Pass arguments one by one(Individual)           func.call(thisArg, arg1, arg2, arg3) 
+    ii) Pass arguments as an array                     func.apply(thisArg, [arg1, arg2, arg3])
+
+                function greet(greeting, name) {
+                console.log(greeting + ", " + name + "!");
+                }
+
+                // Using call()
+                greet.call(null, "Hello", "Swagat");  
+                // Output: Hello, Swagat!
+
+                // Using apply()
+                greet.apply(null, ["Hi", "Swagat"]);  
+                // Output: Hi, Swagat!
+
+    NOTE : Theses are rarely used - use spread operator:  greet(...["Hey", "Swagat"]); // same as apply()
+
