@@ -40,3 +40,60 @@
 
     NOTE : Theses are rarely used - use spread operator:  greet(...["Hey", "Swagat"]); // same as apply()
 
+4.What is the difference between `mouseenter` and `mouseover` event in JavaScript and browsers?
+
+	- Both are mouse events that trigger when the mouse pointer enters an element —
+	  but they behave slightly differently when dealing with child elements.
+
+		mouseenter event :  Does not bubble    --->  mouseenter → “Triggers only once, when entering the element itself.”
+		mouseover event : Bubbles up the DOM   --->  mouseover → “Triggers many times, even for children.”
+
+5. What are the various data types in JavaScript?
+	-  In JavaScript, there are 8 main data types — divided into Primitive and Non-Primitive (Reference) types.
+
+		1. Primitive Data Types:
+			
+    Number: Represents both integers and floating-point numbers.     42,   3.24
+    String: Represents sequences of characters.       'Swagat Murmu'
+    Boolean: Represents true or false values.		
+    Undefined: A variable that has been declared but not assigned a value.      let user;
+    Null: Represents the intentional absence of any object value. 		assign "Null"
+    Symbol: A unique and immutable value used as object property keys.		 let sym1 = Symbol();     let sym2 = Symbol('description');  
+   BigInt: Represents integers with arbitrary precision.		let bigNumber = BigInt(9007199254740991);
+
+		2.Non-primitive (Reference) data types
+
+    Object: Used to store collections of data.
+let person = {
+  name: 'Alice',
+  age: 30,
+};
+console.log(person); // {name: "Alice", age: 30}
+
+    Array: An ordered collection of data.
+let numbers = [1, 2, 3, 4, 5];
+console.log(numbers);
+
+
+    Function: A callable object.
+function greet() {
+  console.log('Hello!');
+}
+
+let add = function (a, b) {
+  return a + b;
+};
+
+greet(); // "Hello!"
+console.log(add(2, 3)); // 5
+
+    Date: Represents dates and times.
+let today = new Date().toLocaleTimeString();
+console.log(today);
+
+    RegExp: Represents regular expressions.
+    Map: A collection of keyed data items.
+    Set: A collection of unique values.
+
+
+
